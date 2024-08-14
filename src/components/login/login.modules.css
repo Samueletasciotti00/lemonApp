@@ -1,0 +1,34 @@
+/* Posizionamento del login */
+
+
+/* Pop Up */
+.enter{
+    text-align: center;
+    padding: 20px;
+    width: 35%;
+    height: 350px;
+    background-color: rgba(208, 200, 63);
+    margin: 5% auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 200;
+}
+
+.enter h3{
+    color: #FFFFFF;
+}
+
+/* Gestione Mobile */
+@media only screen and (min-width: 380px) and (max-width: 900px){
+    .enter{
+        width: 80%;
+    }
+}
+
+/* Inputs */
+.input-lemon{
+    border: none;
+    box-shadow: -4px 4px 0 0 black;
+    color: black;
+    width: 45%;
+}

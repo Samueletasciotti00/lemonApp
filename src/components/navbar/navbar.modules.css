@@ -1,0 +1,84 @@
+
+.container-fluid{
+    text-align: center;
+}
+
+/* Proprietà Simbolo */
+
+.simbol {
+    max-width: 80px;
+    max-height: 80px;
+    animation-name: box;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+}
+
+i.fa-square-full {
+    display: inline-block; 
+    transition: transform 0.5s linear;
+}
+
+/* Gestione HOVER del simbolo */
+.simbol:hover i {
+    transform: rotateY(180deg);
+}
+
+/* Movimento */
+@keyframes box {
+    0% {
+        transform: rotate(0deg);
+    }
+    12.5% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    37.5% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    62.5% {
+        transform: rotate(225deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87.5% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Login */
+
+.login button{
+    padding: 1px 25px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -4px 4px 0 0 black;
+    transition: 0.5s;
+}
+
+.login:hover button{
+    box-shadow: 0 0 black;
+    transform: translateY(0.18rem);
+}
+
+
+/* Titol font */
+.titol{
+    /* TO CONTROLL */
+    translate: 25px;
+}
+
+h1{
+    font-family: "Roboto Mono", monospace;
+}
