@@ -1,18 +1,25 @@
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Login from './components/login/Login'
+import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/navbar/Navbar';
+import Login from './components/login/Login';
 
 function App() {
+  const [isLoginVisible, setLoginVisible] = useState(false);
+
+  const toggleLogin = () => {
+    setLoginVisible(!isLoginVisible);
+  };
 
   return (
     <>
       {/* Menu NavBar */}
-      < Navbar></Navbar>
+      <Navbar onLoginClick={toggleLogin} />  
 
-      {/* Login Menu Hidden */}
-      <Login> </Login>
+      {/* Login Menu condizionale */}
+      {isLoginVisible && <Login />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
