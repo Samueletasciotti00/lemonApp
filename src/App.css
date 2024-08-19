@@ -12,3 +12,13 @@ body{
 .container-fluid{
   background-color: rgba(208, 200, 63);
 }
+
+
+/* card */
+.card-block{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+  justify-content: space-around;
+}

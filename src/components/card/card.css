@@ -1,0 +1,42 @@
+.card {
+    min-width: 30%;
+    height: 300px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(208, 200, 63);
+    border: 2px solid black;
+}
+
+.card div {
+    width: 280px; 
+    height: 280px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px;
+    transition-delay: 1s;
+}
+
+/* Gestione dell'hover sull immagine */
+.card:hover {
+    transition: 1s;
+    scale: 1.1;
+}
+
+/* Settings of account */
+.name-box{
+    background-color: black;
+    padding: 3px;
+    border: 1px solid gray;
+    box-shadow: -2px 2px 0 0 gray;
+}
