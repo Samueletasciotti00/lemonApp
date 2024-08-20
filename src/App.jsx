@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Login from './components/login/Login';
 import Card from './components/card/Card';
+import User from './components/user/User';
 
 function App() {
   const [isLoginVisible, setLoginVisible] = useState(false);
@@ -28,6 +29,11 @@ function App() {
       {/* Login Menu condizionale */}
       {isLoginVisible && <Login />}
 
+      {/* Cover Of User */}
+      <div className="cover">
+        {/* Background covers */}
+      </div>
+
       <div className='container'>
         <div className="row">
           <div className="col d-flex flex-wrap justify-content-around">
@@ -35,9 +41,12 @@ function App() {
             {info.map((item, index) => (
               <Card key={index} imgSrc={item.imgSrc} name={item.name} />
             ))}
+            {/* <User info={info[0]}></User> */}
           </div>
         </div>
       </div>
+
+      
     </>
   );
 }

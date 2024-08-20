@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: #414448;
+  background-color: #9d631e;
 }
 
 .container-fluid{
@@ -21,4 +21,20 @@ body{
   gap: 40px;
   margin: 20px;
   justify-content: space-around;
+}
+
+/* Cover of user */
+.cover{
+  width: 100%;
+  height: 30vh;
+  background-color: #9d631e;
+  background: url("src/assets/img/lemons.webp");
+  background-size: contain;
+  position: absolute;
+}
+
+
+.cover img{
+  max-height: 100%;
+  
 }
